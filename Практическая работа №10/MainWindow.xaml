@@ -1,0 +1,37 @@
+﻿<Window x:Class="Практическая_работа__10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практическая_работа__10"
+        mc:Ignorable="d"
+        Title="Практическая работа №10" Height="300" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" FontSize="12" Icon="/game074.ico">
+    <Grid>
+        <StackPanel>
+            <Menu Margin="0,0,0,10">
+                <MenuItem Header="Файл">
+                    <MenuItem Header="Выполнить" Click="ExecuteButton_Click"/>
+                </MenuItem>
+                <MenuItem Header="Справка">
+                    <MenuItem Header="О программе" Click="InfoProgaButton_Click"/>
+                    <MenuItem Header="О создателе" Click="InfoCreatorButton_Click"/>
+                </MenuItem>
+                <MenuItem Header="Выход" Click="ExitProgaButton_Click"/>
+            </Menu>
+
+            <Label Content="Введите массив (через запятую):" Margin="10,0,170,0"/>
+            <TextBox x:Name="InputArrayTextBox" Margin="10,0,10,10" Height="25"/>
+
+            <Label Content="Введите число A:" Margin="10,0,270,0"/>
+            <TextBox x:Name="InputATextBox" Margin="10,0,10,10" Height="25"/>
+
+            <Button Content="Выполнить" Margin="10,0,10,10" Height="30" Click="ExecuteButton_Click"/>
+
+            <Label Content="Максимальное четное число:" Margin="10,0,10,0"/>
+            <TextBox x:Name="EvenMaxTextBlock" Margin="195,-25,10,0"/>
+
+            <Label Content="Минимальное число кратное A:" Margin="10,10,10,0"/>
+            <TextBox x:Name="MultipleMinTextBlock" Margin="200,-25,10,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
